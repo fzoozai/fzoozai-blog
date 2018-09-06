@@ -1,15 +1,15 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Default Starter',
+    title: 'fzoozai travel blog',
   },
   plugins: [
     {
       resolve: 'gatsby-source-contentful',
       options: {
-        spaceId: 'es4e3fxc3fmd',
-        accessToken: 'cfb8f3d44c83c02bf09853928d539dfe66ce2d036aa2238d6ff7b5d71369a7da'
-      }
+        spaceId: process.env.CONTENTFUL_SPACE_ID,
+        accessToken: process.env.CONTENTFUL_DELIVERY_ACCESS_TOKEN,
+      },
     },
-    `gatsby-plugin-react-helmet`
+    `gatsby-plugin-react-helmet`,
   ],
 }

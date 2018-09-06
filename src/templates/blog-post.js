@@ -1,30 +1,30 @@
-import React, {Component} from 'react';
-import PropTypes from 'prop-types';
+// import React, {Component} from 'react';
+// import PropTypes from 'prop-types';
 
-class BlogPost extends Component {
-  render() {
-    const {
-      title
-    } = this.props.data.contentfulBlog;
-    return (
-      <div>
-        <h1>{title}</h1>
-      </div>
-    )
-  }
-}
+// class BlogPost extends Component {
+//   render() {
+//     const {
+//       title
+//     } = this.props.data.contentfulBlog;
+//     return (
+//       <div>
+//         <h1>{title}</h1>
+//       </div>
+//     )
+//   }
+// }
 
-BlogPost.PropTypes = {
-  data: PropTypes.object.isRequired
-}
+// BlogPost.PropTypes = {
+//   data: PropTypes.object.isRequired
+// }
 
-export default BlogPost;
+// export default BlogPost;
 
-export const pageQuery = graphql`
-  query blogPostQuery($slug: String!){
-    contentfulBlog(slug: {eq: $slug}) {
-      title
-      slug
-    }
-  }
-`
+// export const pageQuery = graphql`
+//   query blogPostQuery($slug: String!){
+//     contentfulBlog(slug: {eq: $slug}) {
+//       title
+//       slug
+//     }
+//   }
+// `
