@@ -15,7 +15,8 @@
     "react",
     "react-native",
     "GraphQL",
-    "Chicago"
+    "Chicago",
+    "Illinois"
   ],
   "license": "MIT",
   "scripts": {
