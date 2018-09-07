@@ -4,7 +4,7 @@ import { Link } from 'gatsby'
 const Navbar = ({ siteTitle }) => (
   <div
     style={{
-      background: 'chocolate',
+      background: 'rebeccapurple',
       marginBottom: '1.45rem',
     }}
   >
