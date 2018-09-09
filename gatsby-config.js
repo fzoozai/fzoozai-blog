@@ -12,6 +12,14 @@ module.exports = {
     },
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
-    `gatsby-plugin-favicon`
+    `gatsby-plugin-favicon`,
+    {
+      resolve: 'gatsby-plugin-web-font-loader',
+      options: {
+        google: {
+          families: ['Stalemate', 'Droid Serif']
+        }
+      }
+    }
   ],
 }
