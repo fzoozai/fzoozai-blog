@@ -1,6 +1,17 @@
 #!/bin/bash
 set -e
 
+# Version 2.0 (08-09-2018)
+if [[ -n ${NODE_ENV} ]]; then
+  ENV=${NODE_ENV}
+elif [[ -n ${DJANGO_ENV} ]]; then
+  ENV=${DJANGO_ENV}
+elif [[ -n ${FLASK_ENV} ]]; then
+  ENV=${FLASK_ENV}
+else
+  ENV="development"
+fi
+
 for i in $(env)
 do
   key=$(echo $i | cut -d "=" -f 1)
@@ -14,8 +25,8 @@ do
     VARIABLE=$(
       curl --silent \
       -H "X-Vault-Token: ${VAULT_TOKEN}" \
-      -X GET https://vault.saronia.io:8200/v1/${SECRET_PATH}/${NODE_ENV} \
-      | jq -r '.data.value'
+      -X GET https://vault.saronia.io:8200/v1/${SECRET_PATH} \
+      | jq -r .data.${ENV}
     )
 
     if [[ "${VARIABLE}" == "null" ]]; then
