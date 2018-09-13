@@ -18,7 +18,9 @@
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "react-helmet": "^5.2.0",
+    "react-vivus": "0.0.2",
     "spectre.css": "^0.5.3",
+    "vivus": "^0.4.4",
     "walkway.js": "0.0.9"
   },
   "keywords": [

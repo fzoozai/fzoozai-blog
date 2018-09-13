@@ -7,7 +7,7 @@ import HomeSvgAnimation from '../components/HomeSvgAnimation'
 const IndexPage = () => (
   <Layout>
     <HomeSvgAnimation />
-    <h1>Happy bithday!</h1>
+    <h1>Work in progress...few days left until release :)</h1>
     <p>Welcome to my birthday party.</p>
     <p>But first go build something great.</p>
     <Link to="/page-2/">Go to page 2</Link>

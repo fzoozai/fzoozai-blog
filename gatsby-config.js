@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'fzoozai travel blog',
+    title: 'One year in Chicago',
   },
   plugins: [
     {
