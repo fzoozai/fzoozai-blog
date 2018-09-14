@@ -1,15 +1,13 @@
-import React, {Component} from 'react';
-import PropTypes from 'prop-types';
+import React, { Component } from 'react'
+import PropTypes from 'prop-types'
+import { graphql } from 'gatsby'
 
 class BlogPost extends Component {
   render() {
-    const {
-      title,
-      content
-    } = this.props.data.contentfulBlog;
+    const { title, content } = this.props.data.contentfulBlog
     return (
       <div>
-        <button className="btn btn-success">Read more</button>          
+        <button className="btn btn-success">Read more</button>
         <h1>{title}</h1>
         <p>{content}</p>
       </div>
@@ -18,14 +16,14 @@ class BlogPost extends Component {
 }
 
 BlogPost.propTypes = {
-  data: PropTypes.object.isRequired
+  data: PropTypes.object.isRequired,
 }
 
-export default BlogPost;
+export default BlogPost
 
 export const pageQuery = graphql`
-  query blogPostQuery($slug: String!){
-    contentfulBlog(slug: {eq: $slug}) { 
+  query blogPostQuery($slug: String!) {
+    contentfulBlog(slug: { eq: $slug }) {
       title
       slug
       content
