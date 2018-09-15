@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'One year in Chicago',
+    title: "Fabian Soosaithasan's Travel Blog"
   },
   plugins: [
     {
@@ -17,7 +17,7 @@ module.exports = {
       resolve: 'gatsby-plugin-web-font-loader',
       options: {
         google: {
-          families: ['Stalemate', 'Droid Serif']
+          families: ['Yantramanav', 'Droid Serif']
         }
       }
     },
