@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
+import Background from '../chicago-bg.jpeg'
 
 import Navbar from './Navbar'
 import './layout.css'
@@ -19,7 +20,12 @@ const Layout = ({ children, data }) => (
       }
     `}
     render={data => (
-      <>
+      <div
+      style={{
+        backgroundImage: `url(${Background})`,
+        height: "100vh",
+      }}
+      >
         <Helmet
           title={data.site.siteMetadata.title}
           meta={[
@@ -42,7 +48,7 @@ const Layout = ({ children, data }) => (
         >
           {children}
         </div>
-      </>
+      </div>
     )}
   />
 )

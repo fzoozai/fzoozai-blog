@@ -4,7 +4,6 @@ import { Link } from 'gatsby'
 const Navbar = ({ siteTitle }) => (
   <div
     style={{
-      background: 'yellow',
       marginBottom: '1.45rem',
     }}
   >
@@ -13,9 +12,11 @@ const Navbar = ({ siteTitle }) => (
         margin: '0 auto',
         maxWidth: 960,
         padding: '1.45rem 1.0875rem',
+        fontFamily: 'monospace',
+        fontSize: '30px'
       }}
     >
-      <h1 style={{ margin: 0 }}>
+      <p style={{ margin: 0 }}>
         <Link
           to="/"
           style={{
@@ -25,7 +26,7 @@ const Navbar = ({ siteTitle }) => (
         >
           {siteTitle}
         </Link>
-      </h1>
+      </p>
     </div>
   </div>
 )

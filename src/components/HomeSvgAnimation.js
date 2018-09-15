@@ -1,12 +1,13 @@
 import React, { Component } from 'react'
 import ReactVivus from 'react-vivus'
 import Walkway from 'react-walkway'
-import svg from '../welcome.svg'
+import svg from '../test.svg'
 
 class HomeSvgAnimation extends Component {
   componentDidMount() {
-    console.log('I am there')
+
   }
+
   render() {
     const drawing = (
       <svg
@@ -17,11 +18,11 @@ class HomeSvgAnimation extends Component {
         x="0px"
         y="0px"
         viewBox="0 0 512 512"
-        style={{ enableBackground: 'new 0 0 512 512' }}
+        style={{ enableBackground: 'new 0 0 512 512', backgroundColor:"lightblue",   fillOpacity: 0 }}
         xmlSpace="preserve"
       >
         <path
-          style={{ fill: '#E6F3FF' }}
+          style={{ fill: 'none', stroke: "#FFF" }}
           d="M511.233,172.944c-1.078-11.589-3.322-22.744-6.589-33.333c-3.678-11.889-8.644-23.067-14.733-33.333
 					c-7.467-12.6-16.633-23.822-27.156-33.333c-23.511-21.244-53.833-33.856-87.311-33.856c-36.333,0-64.978,14.422-86.522,33.856
 					c-1.011,0.911-2.011,1.844-2.989,2.789c-0.489,0.478-0.978,0.944-1.456,1.422c-0.556,0.522-1.1,1.067-1.633,1.6
@@ -38,7 +39,7 @@ class HomeSvgAnimation extends Component {
 					C512,183.722,511.744,178.289,511.233,172.944z"
         />
         <path
-          style={{ fill: '#CFDBE6' }}
+          style={{ fill: 'none',  stroke: "#FFF" }}
           d="M512,189.233c0,5.744-0.267,11.422-0.8,17.044c-1.067,11.367-3.189,22.478-6.256,33.333
 					c-3.211,11.4-7.456,22.511-12.611,33.333c-5.444,11.444-11.889,22.567-19.2,33.333c-7.789,11.511-16.556,22.622-26.1,33.333
 					c-10.322,11.6-21.567,22.722-33.467,33.333c-13.122,11.733-27.044,22.844-41.444,33.333c-16.4,11.933-33.422,23.067-50.567,33.333
@@ -50,7 +51,7 @@ class HomeSvgAnimation extends Component {
 					c3.267,10.589,5.511,21.744,6.589,33.333C511.744,178.289,512,183.722,512,189.233z"
         />
         <path
-          style={{ fill: '#2E8AE6' }}
+          style={{ fill: 'none', stroke: "#FFF" }}
           d="M256,113.833v159.111H20.056c-0.222-0.467-0.478-0.956-0.722-1.433
 					c-0.078-0.156-0.156-0.311-0.222-0.467c-5.333-11.4-9.222-22.378-12-32.589C1.778,219.544,0,202.922,0,189.233
 					C0,105.9,58.767,40.456,134.189,39.111c0.8-0.022,1.578-0.022,2.367-0.022c46.222,0,80,23.356,102.667,50.633
@@ -58,103 +59,108 @@ class HomeSvgAnimation extends Component {
         />
         <g>
           <circle
-            style={{ fill: '#E6F3FF' }}
+            style={{ fill: 'none',  stroke: "#FFF" }}
             cx="111.478"
             cy="127.578"
             r="16.667"
           />
           <circle
-            style={{ fill: '#E6F3FF' }}
+            style={{ fill: 'none' ,  stroke: "#FFF"}}
             cx="128.144"
             cy="194.244"
             r="16.667"
           />
           <circle
-            style={{ fill: '#E6F3FF' }}
+            style={{ fill: 'none' ,  stroke: "#FFF" }}
             cx="194.811"
             cy="194.244"
             r="16.667"
           />
           <circle
-            style={{ fill: '#E6F3FF' }}
+            style={{ fill: 'none',  stroke: "#FFF" }}
             cx="178.144"
             cy="127.578"
             r="16.667"
           />
         </g>
         <path
-          style={{ fill: '#D93F21' }}
+          style={{ fill: 'none',  stroke: "#FFF" }}
           d="M462.756,72.944H288.922c21.544-19.433,50.189-33.856,86.522-33.856
 					C408.922,39.089,439.244,51.7,462.756,72.944z"
         />
         <g>
           <path
-            style={{ fill: '#FF4B26' }}
+            style={{ fill: 'none' ,  stroke: "#FFF"}}
             d="M473.133,306.278c-7.789,11.511-16.556,22.622-26.1,33.333H64.844
 						c-10.011-11.356-18.544-22.5-25.789-33.333H473.133z"
           />
           <path
-            style={{ fill: '#FF4B26' }}
+            style={{ fill: 'none' ,  stroke: "#FFF"}}
             d="M413.567,372.944c-13.122,11.733-27.044,22.844-41.444,33.333H139.433
 						c-15.4-11.178-29.144-22.311-41.411-33.333H413.567z"
           />
         </g>
         <g>
           <path
-            style={{ fill: '#D93F21' }}
+            style={{ fill: 'none',  stroke: "#FFF" }}
             d="M504.644,139.611H256v-25.778c0.578-0.989,1.178-1.989,1.789-2.978
 						c0.389-0.633,0.778-1.278,1.189-1.922c0.067-0.122,0.144-0.244,0.233-0.367c0.467-0.767,0.956-1.522,1.456-2.289h229.244
 						C496,116.544,500.967,127.722,504.644,139.611z"
           />
           <path
-            style={{ fill: '#D93F21' }}
+            style={{ fill: 'none',  stroke: "#FFF" }}
             d="M512,189.233c0,5.744-0.267,11.422-0.8,17.044H256v-33.333h255.233
 						C511.744,178.289,512,183.722,512,189.233z"
           />
           <path
-            style={{ fill: '#D93F21' }}
+            style={{ fill: 'none',  stroke: "#FFF" }}
             d="M504.944,239.611c-3.211,11.4-7.456,22.511-12.611,33.333H256v-33.333H504.944z"
           />
           <path
-            style={{ fill: '#D93F21' }}
+            style={{ fill: 'none',  stroke: "#FFF" }}
             d="M473.133,306.278c-7.789,11.511-16.556,22.622-26.1,33.333H256v-33.333H473.133z"
           />
           <path
-            style={{ fill: '#D93F21' }}
+            style={{ fill: 'none',  stroke: "#FFF" }}
             d="M413.567,372.944c-13.122,11.733-27.044,22.844-41.444,33.333H256v-33.333H413.567z"
           />
         </g>
         <path
-          style={{ fill: '#FF4B26' }}
+          style={{ fill: 'none',  stroke: "#FFF" }}
           d="M321.556,439.611c-29.067,17.433-56.867,31.1-58.7,31.878c-2.289,0.967-4.667,1.422-6.856,1.422
 					c-2.044,0-4.011-0.378-5.933-1.1c-2.389-0.856-28.322-13.578-59.611-32.2H321.556z"
         />
         <path
-          style={{ fill: '#D93F21' }}
+          style={{ fill: 'none' ,  stroke: "#FFF"}}
           d="M256,472.911c2.189,0,4.567-0.456,6.856-1.422c1.833-0.778,29.633-14.444,58.7-31.878H256V472.911z"
         />
       </svg>
     )
 
     return (
-      <div>
-        <Walkway
+      <div
+        style={{
+        }}
+      >
+        {/* <Walkway
           svg={drawing}
           onFinish={() => console.log('Animation complete')}
           options={{
-            duration: '5000',
+            duration: '1000',
             easing: 'easeInOutQuad',
           }}
-        />
+        /> */}
         <ReactVivus
           id="foo"
           option={{
             file: svg,
             animTimingFunction: 'EASE',
             type: 'oneByOne',
+            start: "autostart",
             onReady: console.log,
+            duration: 1000
           }}
-          style={{ height: '100px', width: '100px' }}
+          style={{ width: '600px' }}
           callback={console.log}
         />
       </div>
