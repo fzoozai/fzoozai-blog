@@ -24,6 +24,8 @@ const Layout = ({ children, data }) => (
       style={{
         backgroundImage: `url(${Background})`,
         height: "100vh",
+        backgroundRepeat: "no-repeat center center fixed",
+        backgroundSize: 'cover'
       }}
       >
         <Helmet

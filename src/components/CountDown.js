@@ -1,12 +1,12 @@
-import React,{Component} from 'react';
+import React, { Component } from 'react';
 
-class CountDown extends React.Component{
+class CountDown extends Component{
     constructor(props){
         super(props);
         this.timeInterval = null;  
-        let nextTarget = this.figureOutNextTargetDate();
-        let headerText = this.figureOutHeaderText(nextTarget.day);
-        let targetDate = new Date(nextTarget.year, nextTarget.month, nextTarget.day);
+        // let nextTarget = this.figureOutNextTargetDate();
+        // let headerText = this.figureOutHeaderText(nextTarget.day);
+        // let targetDate = new Date(nextTarget.year, nextTarget.month, nextTarget.day);
         var date = new Date('October 09, 2018 00:00:00');
         this.targetDate = date;
         this.getTimeTill(this.targetDate, (timeRemaining)=>{
@@ -19,7 +19,7 @@ class CountDown extends React.Component{
         let current = new Date();
         let year = current.getFullYear();
         let month;
-        if(current.getMonth() == 11){
+        if(current.getMonth() === 11){
           month = 0; 
           year++;
         } else { 
@@ -27,14 +27,14 @@ class CountDown extends React.Component{
         }
             
         let day = current.getDate();
-        if(day == 1){
+        if(day === 1){
           day = 2;
         } else if(day >= 2 && day < 20) {
           day = 20;
         } else if(day >= 20){
           day = 1;
           month++;
-          if(month == 11){
+          if(month === 11){
             month = 0;
             year++;
           }
@@ -46,7 +46,7 @@ class CountDown extends React.Component{
         }
     }
     figureOutHeaderText(day){
-       if(day == 1){
+       if(day === 1){
          return "";
        } else if(day >= 2 && day < 20) {
          return "";
