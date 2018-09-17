@@ -21,14 +21,16 @@ const Layout = ({ children, data }) => (
     `}
     render={data => (
       <div
-      style={{
-        backgroundImage: `url(${Background})`,
-        height: "100vh",
-        backgroundRepeat: "no-repeat center center fixed",
-        backgroundSize: 'cover'
-      }}
+        style={{
+          backgroundImage: `url(${Background})`,
+          height: "100vh",
+          backgroundRepeat: "no-repeat center center fixed",
+          backgroundSize: 'cover'
+          // display: 'flex',
+          // flexDirection: 'column'
+        }}
       >
-        <Helmet
+        {/* <Helmet
           title={data.site.siteMetadata.title}
           meta={[
             { name: 'description', content: 'React developer' },
@@ -38,16 +40,9 @@ const Layout = ({ children, data }) => (
                 'Chicago',
             },
           ]}
-        />
-        <Navbar siteTitle={data.site.siteMetadata.title} />
-        <div
-          style={{
-            margin: '0 auto',
-            maxWidth: 960,
-            padding: '0px 1.0875rem 1.45rem',
-            paddingTop: 0,
-          }}
-        >
+        /> */}
+        {/* <Navbar siteTitle={data.site.siteMetadata.title} /> */}
+        <div>
           {children}
         </div>
       </div>

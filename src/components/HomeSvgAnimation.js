@@ -159,7 +159,10 @@ class HomeSvgAnimation extends Component {
             onReady: console.log,
             duration: 1000
           }}
-          style={{ width: '600px' }}
+          style={{
+            maxWidth:'65%',
+            margin: '50px'
+          }}
           callback={console.log}
         />
       </div>
