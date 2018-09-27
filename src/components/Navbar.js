@@ -16,6 +16,7 @@ const Navbar = ({ siteTitle }) => (
         fontSize: '30px'
       }}
     >
+
       <p style={{ margin: 0 }}>
         <Link
           to="/"
