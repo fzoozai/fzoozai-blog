@@ -24,8 +24,6 @@ class HomeSvgAnimation extends Component {
             duration: 1000
           }}
           style={{
-            maxWidth:'65%',
-            margin: '50px'
           }}
           callback={console.log}
         />

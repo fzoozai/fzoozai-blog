@@ -91,9 +91,9 @@ class CountDown extends Component{
     render(){
       
       return(
-          <div id="countDown" style={{diplay: 'flex', backgroundColor: 'whitesmoke', opacity: 0.5, padding: '25pt', marginBottom:'10pt'}}>
+          <div id="countDown" style={{diplay: 'flex', width:'100vh', backgroundColor: 'whitesmoke', opacity: 0.5, padding: '15pt', marginBottom:'10pt'}}>
             <h1>{this.state.headerText}</h1>
-            <section style={{display: 'flex', justifyContent: 'space-between', color: 'whitesmoke'}}>
+            <section id="jadu" style={{display: 'flex', justifyContent: 'space-between', color: 'whitesmoke'}}>
               <div className="days section" style={{color: 'black'}}>
                  <p>Days</p>
                  <h1>{this.state.timeRemaining.days}</h1>

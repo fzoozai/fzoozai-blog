@@ -71,10 +71,12 @@ const Layout = ({ children, data }) => (
         }}
       >
       <Menu styles={ styles }>
-        <a id="home" className="menu-item" href="/">Home</a>
-        <a id="about" className="menu-item" href="/about">About</a>
-        <a id="contact" className="menu-item" href="/contact">Contact</a>
-        <a className="menu-item--small" href="">Settings</a>
+        <nav style={{display:'flex', flexDirection:'column'}}>
+          <a id="about" className="bm-item" href="/about">About Me</a>
+          <a id="contact" className="bm-item" href="/contact">Blog</a>
+          <a className="bm-item--small" href="">Contact</a>
+          <a id="home" className="bm-item" href="/">World Horizon</a>
+        </nav>
       </Menu>
       <main id="page-wrap">
           <div>
