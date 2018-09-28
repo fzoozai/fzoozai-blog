@@ -4,6 +4,9 @@ import Link from 'gatsby-link'
 import Layout from '../components/layout'
 import HomeSvgAnimation from '../components/HomeSvgAnimation'
 import CountDown from '../components/CountDown'
+import Image from '../yosemite.jpeg'
+
+
 
 const IndexPage = () => (
   <Layout>
