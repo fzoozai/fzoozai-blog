@@ -8,7 +8,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const Timeline = () => (
   <div
+    className="container"
     style={{
+        backgroundColor: 'lightgray'
     }}
   >
     <VerticalTimeline>
