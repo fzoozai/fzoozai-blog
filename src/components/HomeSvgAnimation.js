@@ -11,6 +11,7 @@ class HomeSvgAnimation extends Component {
     return (
       <div
         style={{
+          marginTop: '105pt'
         }}
       >
         <ReactVivus

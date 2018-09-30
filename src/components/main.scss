@@ -8,6 +8,15 @@ body {
     width: 600pt;
 }
 
+.vertical-timeline--two-columns .vertical-timeline-element-content .vertical-timeline-element-date {
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+.mobileRoute {
+  display: none;
+}
+
 /* ----------- iPhone 4 and 4S ----------- */
 
 /* Portrait and Landscape */
@@ -20,6 +29,15 @@ body {
     }
     #page-wrap #countDown {
         width: 50vh!important;
+    }
+
+    .vertical-timeline--two-columns .vertical-timeline-element-content .vertical-timeline-element-date {
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    .mobileRoute {
+      display: block;
     }
 }
 

@@ -9,6 +9,12 @@ import Image from '../yosemite.jpeg'
 import BackgroundVideo from '../chicago.mp4'
 import Background from '../chicago-bg.jpeg'
 
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faStroopwafel } from '@fortawesome/free-solid-svg-icons'
+
+library.add(faStroopwafel);
+
 
 const IndexPage = () => (
   <Layout>
