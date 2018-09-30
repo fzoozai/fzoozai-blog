@@ -62,10 +62,10 @@ const Layout = ({ children, data }) => (
     render={data => (
       <div
         style={{
-          backgroundImage: `url(${Background})`,
-          height: "100vh",
-          backgroundRepeat: "no-repeat center center fixed",
-          backgroundSize: 'cover'
+          // backgroundImage: `url(${Background})`,
+          // height: "100vh",
+          // backgroundRepeat: "no-repeat center center fixed",
+          // backgroundSize: 'cover'
           // display: 'flex',
           // flexDirection: 'column'
         }}
