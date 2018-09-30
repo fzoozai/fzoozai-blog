@@ -90,11 +90,16 @@ const Layout = ({ children, data }) => (
             </li>
             <li className="menu-item">
               <div className="menu-badge">
-                <label className="label label-primary"><FontAwesomeIcon icon="user-tie" /></label>
+                <label className="label label-primary"><FontAwesomeIcon icon="id-card" /></label>
               </div>
               <a href="#menus">About Me</a>
             </li>
-            <li className="menu-item"><a href="#menus">World Horizon</a></li>
+            <li className="menu-item">
+              <div className="menu-badge">
+                <label className="label label-primary"><FontAwesomeIcon icon="globe-americas" /></label>
+              </div>
+              <a href="#menus">World Horizon</a>
+            </li>
 
             {/* <details className="accordion" closed>
               <summary className="accordion-header">

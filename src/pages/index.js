@@ -11,10 +11,12 @@ import Background from '../chicago-bg.jpeg'
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHome, faUserTie } from '@fortawesome/free-solid-svg-icons'
+import { faHome, faUserTie, faIdCard, faGlobeAmericas } from '@fortawesome/free-solid-svg-icons'
 
 library.add(faHome);
-library.add(faUserTie)
+library.add(faUserTie);
+library.add(faIdCard);
+library.add(faGlobeAmericas);
 
 
 const IndexPage = () => (
