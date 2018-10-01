@@ -26,8 +26,14 @@ body {
   // margin-bottom: 0!important;
 }
 
+
+
 .vertical-timeline--two-columns .vertical-timeline-element-content .vertical-timeline-element-date {
   color: whitesmoke;
+}
+
+.indexInfo {
+  flex-wrap: wrap;
 }
 
 .menu-navigation {
@@ -40,6 +46,21 @@ body {
   and (min-device-width: 320px) 
   and (max-device-width: 480px)
   and (-webkit-min-device-pixel-ratio: 2) {
+
+    .indexInfo {
+      margin: 10pt;
+    }
+
+    .usa-flag svg {
+      width: 400px;
+      padding: 20pt;
+      margin-top: -15%;
+    }
+
+    .infoText {
+      margin-top: -15%;
+    }
+
     #foo svg {
         width: 250px;
     }

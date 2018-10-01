@@ -44,12 +44,12 @@ const IndexPage = () => (
       </div>
 
       <div>
-        <li className="divider" style={{marginTop: '30pt'}} data-content="WELCOME TO MY BLOG - JOIN ME ON MY JOURNEY." />
+        <li className="divider" style={{marginTop: '30pt', marginBottom: '-20px'}} data-content="WELCOME TO MY BLOG - JOIN ME ON MY JOURNEY." />
 
-        <div style={{display:'flex', justifyContent:'space-around', alignItems: 'center'}}>
-          <div>
+        <div className="indexInfo" style={{display:'flex', justifyContent:'space-evenly', alignItems: 'center', flexGrow:'1'}}>
+          <div className="usa-flag">
             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-              viewBox="0 0 512 512" style={{enableBackground:"new 0 0 512 512", width:"auto", height: '500px'}} xmlSpace="preserve">
+              viewBox="0 0 512 512" style={{enableBackground:"new 0 0 512 512",height: '400px'}} xmlSpace="preserve">
             <g>
               <path style={{fill:"#ABB3B7"}} d="M39.825,181.09c-4.215,0-7.632-3.417-7.632-7.632v-17.3c0-4.215,3.417-7.632,7.632-7.632
                 s7.632,3.417,7.632,7.632v17.3C47.457,177.674,44.04,181.09,39.825,181.09z"/>
@@ -168,8 +168,9 @@ const IndexPage = () => (
               c-4.215,0-7.632,3.417-7.632,7.632v1.018h-1.018c-4.215,0-7.632,3.417-7.632,7.632S140.07,213.655,144.285,213.655z"/>  
             </svg>
           </div>
-          <div style={{alignContent: 'center'}}>
-            Info-Text
+          <div className="infoText" style={{alignContent: 'center', padding: '10pt', backgroundColor: 'whitesmoke', opacity: '1', width:'600px', borderRadius: '5pt' }}>
+            <div>Info-Text</div>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
           </div>
         </div>  
         
