@@ -4,13 +4,14 @@ import { VerticalTimeline, VerticalTimelineElement}  from 'react-vertical-timeli
 import 'react-vertical-timeline-component/style.min.css';
 import Skyline from './skyline.png';
 import Route from './path.png';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import TimelineBg from '../timeline-bg.png';
 
 const Timeline = () => (
   <div
-    className="container"
     style={{
-        backgroundColor: 'lightgray'
+        // backgroundColor: 'rgb(	87, 85, 217, 0.7)'
+        backgroundImage: `url(${TimelineBg})`
     }}
   >
     <VerticalTimeline>

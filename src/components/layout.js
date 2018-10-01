@@ -96,6 +96,12 @@ const Layout = ({ children, data }) => (
             </li>
             <li className="menu-item">
               <div className="menu-badge">
+                <label className="label label-primary"><FontAwesomeIcon icon="hand-holding-heart" /></label>
+              </div>
+              <a href="#menus">Volunteering Program</a>
+            </li>
+            <li className="menu-item">
+              <div className="menu-badge">
                 <label className="label label-primary"><FontAwesomeIcon icon="globe-americas" /></label>
               </div>
               <a href="#menus">World Horizon</a>

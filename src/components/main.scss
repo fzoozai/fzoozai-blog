@@ -21,6 +21,15 @@ body {
   width: 230px;
 }
 
+.vertical-timeline {
+  // margin-top: 0!important;
+  // margin-bottom: 0!important;
+}
+
+.vertical-timeline--two-columns .vertical-timeline-element-content .vertical-timeline-element-date {
+  color: whitesmoke;
+}
+
 .menu-navigation {
   
 }
@@ -45,6 +54,10 @@ body {
 
     .mobileRoute {
       display: block;
+    }
+
+    .vertical-timeline--two-columns .vertical-timeline-element-content .vertical-timeline-element-date {
+      color: #000;
     }
 }
 
