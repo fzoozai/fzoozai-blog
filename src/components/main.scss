@@ -6,6 +6,7 @@ body {
 
 #foo svg {
     width: 600pt;
+    
 }
 
 .vertical-timeline--two-columns .vertical-timeline-element-content .vertical-timeline-element-date {
@@ -116,6 +117,15 @@ body {
         width:'55vh'!important; 
     }
 
+    .infoText {
+      margin-top: -25%;
+    }
+
+    .usa-flag svg {
+      width: 350px;
+      padding: 20pt;
+      margin-top: -15%;
+    }
 }
 
 /* Portrait */

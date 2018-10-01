@@ -33,7 +33,7 @@ const IndexPage = () => (
       >
 
        <div style={{display:'flex', flexDirection: 'column', alignItems: 'center'}}>
-        <HomeSvgAnimation />
+        <div style={{marginTop: '105pt', padding: '15pt', borderRadius: '5pt'}}><HomeSvgAnimation /></div>
         <div>
           <div style={{display:'flex', flexDirection:'column', justifyContent: 'space-between'}}>
             <div><CountDown /></div>
@@ -178,6 +178,22 @@ const IndexPage = () => (
 
       {/* <div style={{display:'flex', justifyContent: 'center', alignContent: 'center', marginTop: '15pt'}}><FontAwesomeIcon icon="hand-holding-heart" size="5x" /></div> */}
       <Timeline />
+
+              <div className="column col-sm-12 col-8 col-mx-auto">
+                <div className="parallax">
+                  <div className="parallax-top-left" tabindex="1"></div>
+                  <div className="parallax-top-right" tabindex="2"></div>
+                  <div className="parallax-bottom-left" tabindex="3"></div>
+                  <div className="parallax-bottom-right" tabindex="4"></div>
+                  <div className="parallax-content">
+                    <div className="parallax-front">
+                      <h2>tvOS parallax demo</h2>
+                    </div>
+                    <div className="parallax-back"><img className="img-responsive rounded" src={Image} alt="macOS Yosemite Wallpaper" /></div>
+                  </div>
+                </div>
+              </div>
+
       {/* <video className='videoTag' autoPlay loop muted>
           <source src={BackgroundVideo} type='video/mp4' />
       </video> */}
