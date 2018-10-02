@@ -10,8 +10,8 @@ import TimelineBg from '../timeline-bg.png';
 const Timeline = () => (
   <div
     style={{
-        // backgroundColor: 'rgb(	87, 85, 217, 0.7)'
-        backgroundImage: `url(${TimelineBg})`
+        backgroundColor: 'rgb(	87, 85, 217, 0.7)'
+        // backgroundImage: `url(${TimelineBg})`
     }}
   >
     <VerticalTimeline>
