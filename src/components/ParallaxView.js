@@ -14,7 +14,7 @@ class ParallaxView extends Component {
         return (
             <Parallax ref="parallax" pages={3}>
                 <Parallax.Layer offset={0} speed={1} style={{ backgroundImage: `url(${Background})`, backgroundRepeat: "repeat center center fixed" }} />
-                <Parallax.Layer offset={1} speed={1} style={{ backgroundColor: `url(${Background})`, backgroundRepeat: "repeat center center fixed"  }} />
+                <Parallax.Layer offset={1} speed={1} style={{ backgroundColor: "#87BCDE" }} />
                 <Parallax.Layer offset={2} speed={1} style={{ backgroundColor: '#87BCDE' }} />
 
                 <Parallax.Layer

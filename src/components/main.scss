@@ -27,7 +27,10 @@ body {
   // margin-bottom: 0!important;
 }
 
-
+.divider[data-content]::after, .divider-vert[data-content]::after {
+  padding: 5pt;
+  border-radius: 2pt;
+}
 
 .vertical-timeline--two-columns .vertical-timeline-element-content .vertical-timeline-element-date {
   color: whitesmoke;
@@ -40,6 +43,13 @@ body {
 .menu-navigation {
   
 }
+
+#Capa_1 {
+  transform: rotate(90deg);
+}
+
+
+
 /* ----------- iPhone 4 and 4S ----------- */
 
 /* Portrait and Landscape */
@@ -47,6 +57,11 @@ body {
   and (min-device-width: 320px) 
   and (max-device-width: 480px)
   and (-webkit-min-device-pixel-ratio: 2) {
+
+    .divider[data-content]::after, .divider-vert[data-content]::after {
+      padding: 3pt;
+      border-radius: 2pt;
+    }
 
     .indexInfo {
       margin: 10pt;

@@ -12,6 +12,10 @@ class HomeSvgAnimation extends Component {
       <div
         style={{
           //marginTop: '105pt'
+          backgroundColor: 'whitesmoke',
+          opacity: '0.6',
+          padding: '20pt',
+          borderRadius: '4pt'
         }}
       >
         <ReactVivus

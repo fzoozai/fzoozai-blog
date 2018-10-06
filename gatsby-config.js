@@ -17,7 +17,7 @@ module.exports = {
       resolve: 'gatsby-plugin-web-font-loader',
       options: {
         google: {
-          families: ['Bad Script', 'Fantasy' ,'Droid Serif']
+          families: ['Bad Script', 'Advent Pro' , 'Fantasy' ,'Droid Serif']
         }
       }
     },

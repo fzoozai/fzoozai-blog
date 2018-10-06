@@ -10,7 +10,7 @@ import TimelineBg from '../timeline-bg.png';
 const Timeline = () => (
   <div
     style={{
-        backgroundColor: 'rgb(	87, 85, 217, 0.7)'
+        // backgroundColor: 'rgb(	87, 85, 217, 0.7)'
         // backgroundImage: `url(${TimelineBg})`
     }}
   >
@@ -110,7 +110,6 @@ const Timeline = () => (
 )
 
 export default Timeline
-
 
 
 

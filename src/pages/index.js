@@ -8,6 +8,8 @@ import CountDown from '../components/CountDown'
 import Image from '../yosemite.jpeg'
 import BackgroundVideo from '../chicago.mp4'
 import Background from '../chicago-bg.jpeg'
+import BG from '../timeline-bg.png'
+import Chicago from '../chicago-banner.jpg'
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -22,21 +24,22 @@ library.add(faHandHoldingHeart);
 
 const IndexPage = () => (
   <Layout>
-    <div>
-      <div
+    {/* <div style={{ backgroundImage: `url(${BG})`,backgroundRepeat: "repeat center center fixed"}}> */}
+<div>
+      <div id="landing-page"
         style={{
           backgroundImage: `url(${Background})`,
           height: "100vh",
           backgroundRepeat: "no-repeat center center fixed",
           backgroundSize: 'cover',
+          backgroundAttachment: 'fixed'
         }}
       >
-
        <div style={{display:'flex', flexDirection: 'column', alignItems: 'center'}}>
         <div style={{marginTop: '105pt', padding: '15pt', borderRadius: '5pt'}}><HomeSvgAnimation /></div>
         <div>
           <div style={{display:'flex', flexDirection:'column', justifyContent: 'space-between'}}>
-            <div><CountDown /></div>
+            {/* <div><CountDown /></div> */}
             <div><Link to="/page-2/"><button className="btn btn-primary">Go to page 2</button></Link></div>
           </div>
         </div>
@@ -173,11 +176,22 @@ const IndexPage = () => (
             <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
           </div>
         </div>  
-        
       </div>
 
+      <div id="landing-page"
+        style={{
+          backgroundImage: `url(${Chicago})`,
+          height: "100%",
+          backgroundRepeat: "no-repeat center center fixed",
+          backgroundSize: 'cover',
+          backgroundAttachment: 'fixed'
+        }}
+      >
+        <Timeline />
+      </div>
+
+
       {/* <div style={{display:'flex', justifyContent: 'center', alignContent: 'center', marginTop: '15pt'}}><FontAwesomeIcon icon="hand-holding-heart" size="5x" /></div> */}
-      <Timeline />
 
 
       {/* <video className='videoTag' autoPlay loop muted>
