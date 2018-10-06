@@ -16,7 +16,7 @@ class Button extends React.Component {
       return (
         <StyleRoot>
         <div className="test" style={styles.bounce}>
-            <div><Link to="/page-2/"><FontAwesomeIcon icon="angle-double-down" size="5x" color="rgb(245, 245, 245, 0.8)"/></Link></div>
+            <FontAwesomeIcon icon="angle-double-down" size="5x" color="rgb(245, 245, 245, 0.8)"/>
         </div>
         </StyleRoot>
       );

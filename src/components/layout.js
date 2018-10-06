@@ -4,6 +4,7 @@ import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 import Background from '../chicago-bg.jpeg'
 import Me from '../../src/me.jpg'
+import Link from 'gatsby-link'
 
 import Navbar from './Navbar'
 import './layout.css'
@@ -62,6 +63,7 @@ const Layout = ({ children, data }) => (
         }
       }
     `}
+    
     render={data => (
       <div
         style={{
@@ -86,13 +88,14 @@ const Layout = ({ children, data }) => (
               <div className="menu-badge">
                 <label className="label label-primary"><FontAwesomeIcon icon="home" /></label>
               </div>
-              <a className="active" href="#menus">Homepage</a>
+              <Link to="/" activeClassName="active">Homepage</Link>
             </li>
             <li className="menu-item">
               <div className="menu-badge">
+              {/* <Link to="/page-2/" activeClassName="active">test</Link> */}
                 <label className="label label-primary"><FontAwesomeIcon icon="id-card" /></label>
               </div>
-              <a href="#menus">About Me</a>
+              <Link to="/page-2" activeClassName="active">About Me</Link>
             </li>
             <li className="menu-item">
               <div className="menu-badge">
