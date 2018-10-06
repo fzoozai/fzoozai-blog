@@ -14,7 +14,7 @@ import Chicago from '../chicago-banner.jpg'
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHome, faUserTie, faIdCard, faGlobeAmericas, faHandHoldingHeart, faAngleDoubleDown } from '@fortawesome/free-solid-svg-icons'
+import { faHome, faUserTie, faIdCard, faGlobeAmericas, faHandHoldingHeart, faAngleDoubleDown, faCloud, faPaperPlane } from '@fortawesome/free-solid-svg-icons'
 
 library.add(faHome);
 library.add(faUserTie);
@@ -22,6 +22,9 @@ library.add(faIdCard);
 library.add(faGlobeAmericas);
 library.add(faHandHoldingHeart);
 library.add(faAngleDoubleDown);
+library.add(faCloud)
+library.add(faPaperPlane)
+
 
 
 const IndexPage = () => (
@@ -39,16 +42,15 @@ const IndexPage = () => (
       >
        <div style={{display:'flex', flexDirection: 'column', alignItems: 'center'}}>
         <div style={{marginTop: '105pt', padding: '15pt', borderRadius: '5pt'}}><HomeSvgAnimation /></div>
+        {/* <AnimatedBtn/>         */}
         <div>
           <div style={{display:'flex', flexDirection:'column', justifyContent: 'space-between'}}>
             {/* <div><CountDown /></div> */}
-
-            <AnimatedBtn />
+            <AnimatedBtn/>        
           </div>
         </div>
         </div>
       </div>
-
       <div className="container" style={{backgroundColor:'whitesmoke'}}>
         <li className="divider" style={{marginTop: '30pt', marginBottom: '-20px'}} data-content="WELCOME TO MY BLOG - JOIN ME ON MY JOURNEY." />
 
