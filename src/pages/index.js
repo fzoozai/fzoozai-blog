@@ -5,6 +5,7 @@ import Layout from '../components/layout'
 import HomeSvgAnimation from '../components/HomeSvgAnimation'
 import Timeline from '../components/Timeline'
 import CountDown from '../components/CountDown'
+import AnimatedBtn from '../components/AnimatedButton'
 import Image from '../yosemite.jpeg'
 import BackgroundVideo from '../chicago.mp4'
 import Background from '../chicago-bg.jpeg'
@@ -13,13 +14,14 @@ import Chicago from '../chicago-banner.jpg'
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHome, faUserTie, faIdCard, faGlobeAmericas, faHandHoldingHeart } from '@fortawesome/free-solid-svg-icons'
+import { faHome, faUserTie, faIdCard, faGlobeAmericas, faHandHoldingHeart, faAngleDoubleDown } from '@fortawesome/free-solid-svg-icons'
 
 library.add(faHome);
 library.add(faUserTie);
 library.add(faIdCard);
 library.add(faGlobeAmericas);
 library.add(faHandHoldingHeart);
+library.add(faAngleDoubleDown);
 
 
 const IndexPage = () => (
@@ -40,13 +42,14 @@ const IndexPage = () => (
         <div>
           <div style={{display:'flex', flexDirection:'column', justifyContent: 'space-between'}}>
             {/* <div><CountDown /></div> */}
-            <div><Link to="/page-2/"><button className="btn btn-primary">Go to page 2</button></Link></div>
+
+            <AnimatedBtn />
           </div>
         </div>
         </div>
       </div>
 
-      <div>
+      <div className="container" style={{backgroundColor:'whitesmoke'}}>
         <li className="divider" style={{marginTop: '30pt', marginBottom: '-20px'}} data-content="WELCOME TO MY BLOG - JOIN ME ON MY JOURNEY." />
 
         <div className="indexInfo" style={{display:'flex', justifyContent:'space-evenly', alignItems: 'center', flexGrow:'1'}}>
@@ -171,7 +174,7 @@ const IndexPage = () => (
               c-4.215,0-7.632,3.417-7.632,7.632v1.018h-1.018c-4.215,0-7.632,3.417-7.632,7.632S140.07,213.655,144.285,213.655z"/>  
             </svg>
           </div>
-          <div className="infoText" style={{alignContent: 'center', padding: '10pt', backgroundColor: 'whitesmoke', opacity: '1', width:'600px', borderRadius: '5pt' }}>
+          <div className="infoText" style={{alignContent: 'center', padding: '10pt', backgroundColor: 'white', opacity: '1', width:'600px', borderRadius: '5pt' }}>
             <div>Info-Text</div>
             <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
           </div>
