@@ -11,6 +11,8 @@ import BackgroundVideo from '../chicago.mp4'
 import Background from '../chicago-bg.jpeg'
 import BG from '../timeline-bg.png'
 import Chicago from '../chicago-banner.jpg'
+import {graphql} from 'gatsby';
+import PropTypes from 'prop-types'
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -27,10 +29,11 @@ library.add(faPaperPlane)
 
 
 
-const IndexPage = () => (
+const IndexPage = ({data}) => (
+  console.log("data", data),
   <Layout>
     {/* <div style={{ backgroundImage: `url(${BG})`,backgroundRepeat: "repeat center center fixed"}}> */}
-<div>
+    <div>
       <div id="landing-page"
         style={{
           backgroundImage: `url(${Background})`,
@@ -46,7 +49,7 @@ const IndexPage = () => (
         <div>
           <div style={{display:'flex', flexDirection:'column', justifyContent: 'space-between'}}>
             {/* <div><CountDown /></div> */}
-            <AnimatedBtn/>        
+            <AnimatedBtn/>     
           </div>
         </div>
         </div>
@@ -177,7 +180,7 @@ const IndexPage = () => (
             </svg>
           </div>
           <div className="infoText" style={{alignContent: 'center', padding: '10pt', backgroundColor: 'white', opacity: '1', width:'600px', borderRadius: '5pt' }}>
-            <div>Info-Text</div>
+            <div>abc</div>
             <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
           </div>
         </div>  
@@ -192,7 +195,7 @@ const IndexPage = () => (
           backgroundAttachment: 'fixed'
         }}
       >
-        <Timeline />
+        <Timeline data={data.allContentfulBlog.edges} />
       </div>
 
 
@@ -206,4 +209,22 @@ const IndexPage = () => (
   </Layout>
 )
 
+IndexPage.propTypes = {
+  data: PropTypes.object.isRequired,
+}
+
 export default IndexPage
+
+export const query = graphql`
+  query indexPageQuery {
+    allContentfulBlog(limit: 100) {
+      edges {
+        node {
+          slug
+          title
+          content
+        }
+      }
+    }
+  }
+`
