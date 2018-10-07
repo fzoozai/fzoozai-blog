@@ -223,6 +223,14 @@ export const query = graphql`
           slug
           title
           content
+          icon {
+            title
+            file {
+              fileName
+              contentType
+              url
+            }
+          }
         }
       }
     }

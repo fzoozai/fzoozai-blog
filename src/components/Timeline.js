@@ -13,10 +13,6 @@ const Timeline = (props) => {
 
     return (
         <div>
-    
-
-
-
           <VerticalTimeline>
                     {props.data.map((edge) => {
                         return (
@@ -25,7 +21,7 @@ const Timeline = (props) => {
                             className="vertical-timeline-element--work"
                             date={"2018 - present"}
                             iconStyle={{ background: '#E3F4F7', color: '#fff' }}
-                            icon={<img src={Skyline}></img>}
+                            icon={<img src={`https:${edge.node.icon.file.url}`}></img>}
                             style={{justifyContent: 'space-between'}}
                             >
                             {/* <h1 key={edge.node.slug}>{edge.node.slug}</h1> */}
