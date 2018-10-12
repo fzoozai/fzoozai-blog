@@ -4,12 +4,11 @@ import { graphql } from 'gatsby'
 
 class BlogPost extends Component {
   render() {
-    const { title, content } = this.props.data.contentfulBlog
+    const { title, content, body } = this.props.data.contentfulBlog
     return (
-      <div>
-        <button className="btn btn-success">Read more</button>
-        <h1>{title}</h1>
-        <p>{content}</p>
+      <div className="container">
+        <h1 style={{fontFamily: 'Advent Pro'}}>{title}</h1>
+        <p>{body.body}</p>
       </div>
     )
   }
@@ -27,6 +26,9 @@ export const pageQuery = graphql`
       title
       slug
       content
+      body {
+        body
+      }
     }
   }
 `

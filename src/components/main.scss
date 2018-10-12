@@ -13,8 +13,11 @@ body {
     
 }
 
-.vertical-timeline-element-date {
-  color: green;
+.vertical-timeline--two-columns .vertical-timeline-element-content .vertical-timeline-element-date {
+  // color:#5755D9!important;
+  color: #000!important;
+  font-family: 'Advent Pro';
+  // font-size: 35px!important;
 }
 
 .vertical-timeline--two-columns .vertical-timeline-element-content .vertical-timeline-element-date {

@@ -95,7 +95,8 @@ const Layout = ({ children, data }) => (
               {/* <Link to="/page-2/" activeClassName="active">test</Link> */}
                 <label className="label label-primary"><FontAwesomeIcon icon="id-card" /></label>
               </div>
-              <Link to="/aboutme" activeClassName="active">About Me</Link>
+              {/* <Link to="/aboutme" activeClassName="active">About Me</Link> */}
+              <a href="#menus">About Me</a>
             </li>
             <li className="menu-item">
               <div className="menu-badge">
