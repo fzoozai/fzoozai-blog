@@ -14,6 +14,7 @@ import Chicago from '../chicago-banner.jpg'
 import {graphql} from 'gatsby';
 import PropTypes from 'prop-types'
 
+
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHome, faUserTie, faIdCard, faGlobeAmericas, faHandHoldingHeart, faAngleDoubleDown, faCloud, faPaperPlane } from '@fortawesome/free-solid-svg-icons'
@@ -220,6 +221,7 @@ export const query = graphql`
     allContentfulBlog(limit: 100) {
       edges {
         node {
+          order
           slug
           title
           content

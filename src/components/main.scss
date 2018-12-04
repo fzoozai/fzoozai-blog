@@ -1,7 +1,16 @@
 @import "node_modules/spectre.css/src/spectre";
+@import "node_modules/spectre.css/src/spectre-exp";
+@import "node_modules/spectre.css/src/_carousels";
+@import "node_modules/spectre.css/src/icons";
+@import "node_modules/spectre.css/src/mixins";
+
+// @import "node_modules/spectre.css/dist/spectre";
+// @import "node_modules/spectre.css/dist/spectre-exp.min";
+// @import "node_modules/spectre.css/dist/spectre-icons.min.css";
+
 
 body {
-    font-family: Bad Script;
+    font-family : Bad Script;
 }
 
 
@@ -11,6 +20,24 @@ body {
 #foo svg {
     width: 600pt;
     
+}
+
+.slick-slide img {
+  margin: auto;
+}
+
+.slick-next {
+
+}
+.slick-next:hover {
+  // background-color: darkgray!important;
+}
+
+.slick-prev {
+
+}
+.slick-prev:hover {
+  // background-color: darkgray!important;
 }
 
 .vertical-timeline--two-columns .vertical-timeline-element-content .vertical-timeline-element-date {
