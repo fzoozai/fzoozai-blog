@@ -1,17 +1,25 @@
 import React from 'react';
-
 import { VerticalTimeline, VerticalTimelineElement}  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import Skyline from './flag.png';
 import { Link } from 'gatsby';
+import _ from 'lodash';
+//import _ from 'gatsby-plugin-lodash';
 
 const Timeline = (props) => {
-    console.log(props);
 
+        // console.log("_", _);
+
+        const orderedBlogPosts = _.sortBy(props.data, ['node.order']);
+        console.log("orderedBlogPosts", orderedBlogPosts);
+
+        // _.chunk(['a', 'b', 'c', 'd'], 2);
+
+    
     return (
         <div>
           <VerticalTimeline>
-                    {props.data.map((edge) => {
+                    { props.data.map((edge) => {
                         return (
                             <VerticalTimelineElement
                             key={edge.node.slug}
