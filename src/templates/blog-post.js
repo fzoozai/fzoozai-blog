@@ -10,9 +10,9 @@ class BlogPost extends Component {
     const { title, content, body } = this.props.data.contentfulBlog
     return (
       <div className="container" >
-        <SimpleSlider />
         <h1 style={{fontFamily: 'Advent Pro'}}>{title}</h1>
-        <p>{body.body}</p>
+        <SimpleSlider />
+        <p style={{marginTop:"10px"}}>{body.body}</p>
       </div>
     )
   }
