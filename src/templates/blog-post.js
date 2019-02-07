@@ -7,12 +7,15 @@ import SimpleSlider from '../components/SimpleSlider'
 
 class BlogPost extends Component {
   render() {
-    const { title, content, body } = this.props.data.contentfulBlog
+    const { title, content, body, slug, slide } = this.props.data.contentfulBlog
+
+    console.log("slide",slide);
+    // console.log("slide", slide.file.url);
     return (
       <div className="container" >
         <h1 style={{fontFamily: 'Advent Pro'}}>{title}</h1>
-        <SimpleSlider />
-        <p style={{marginTop:"10px"}}>{body.body}</p>
+        <SimpleSlider slide={slide} />
+        <p style={{marginTop:"10px", marginLeft:"15px"}}>{body.body}</p>
       </div>
     )
   }
@@ -32,6 +35,13 @@ export const pageQuery = graphql`
       content
       body {
         body
+      }
+      slide {
+        title
+        file {
+          fileName
+          url
+        }
       }
     }
   }
