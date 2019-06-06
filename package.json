@@ -3,7 +3,7 @@
   "description": "fzoozai's personal blog",
   "version": "0.1.0",
   "engines": {
-    "node": "6.7.0"
+    "node": "11.5.0"
   },
   "author": "Fabian Soosaithasan <fabian.soosaithasan@fzoozai.de>",
   "dependencies": {
