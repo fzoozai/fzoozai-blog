@@ -51,6 +51,7 @@
   "scripts": {
     "build": "GOOGLE_ANALYTICS_TRACKING_ID=secret/fzoozai/blog/GOOGLE_ANALYTICS_TRACKING_ID CONTENTFUL_SPACE_ID=secret/fzoozai/blog/CONTENTFUL_SPACE_ID CONTENTFUL_DELIVERY_ACCESS_TOKEN=secret/fzoozai/blog/CONTENTFUL_DELIVERY_ACCESS_TOKEN ./scripts/vaultcar.sh gatsby build --prefix-paths",
     "develop": "CONTENTFUL_SPACE_ID=secret/fzoozai/blog/CONTENTFUL_SPACE_ID CONTENTFUL_DELIVERY_ACCESS_TOKEN=secret/fzoozai/blog/CONTENTFUL_DELIVERY_ACCESS_TOKEN ./scripts/vaultcar.sh gatsby develop",
+    "heroku-postbuild": "gatsby build",
     "format": "prettier --write '**/*.js'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
